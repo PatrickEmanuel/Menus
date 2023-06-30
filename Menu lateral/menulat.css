@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("fundo.jpg");
+    background-size: 100%;
+}
+img {
+    width: 60px;
+}
+nav {
+    background: #1616167c;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    left: -200px;
+    transition: all .05s;
+}
+input {
+    display: none;
+}
+input:checked ~ nav {
+    transform: translateX(200px);
+}
+ul{
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+} 
+a:hover {
+    background: rgb(175, 255, 255, 0.6);
+    color: darkblue;
+}
+
+li {
+    padding: 20px  20px;
+}
+label {
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
